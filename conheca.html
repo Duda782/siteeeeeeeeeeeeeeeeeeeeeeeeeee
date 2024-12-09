@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .section1 {
+            display: flex;
+            background-color: white;
+            height: 70vh;
+        }
+        .video {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .info {
+            flex: 1;
+            padding: 20px;
+        }
+        .section2 {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .card {
+            background-color: rgb(0, 0, 0);
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card img {
+            max-width: 650px; /* Aumenta o tamanho das imagens */
+            margin: 0 10px;
+        }
+        .arrow {
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .arrow:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="section1">
+        <div class="video">
+          <iframe width="560" height="315" src="https://youtu.be/O03F9XB4vVU?si=iAGg0gWR46Lz7pZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="info">
+            <h1>Colo de deus</h1>
+            <p>A música "Casa" da Comunidade Colo de Deus é uma canção marcante, especialmente dentro da espiritualidade da comunidade, que tem um forte foco no acolhimento, no amor e na proteção divina. Com uma letra simples, mas profunda, a música reflete o desejo de se encontrar na "casa" de Deus, um lugar onde as pessoas podem experimentar o cuidado, a segurança e o amor incondicional do Pai.
+
+                Na letra, a "Casa" é descrita como um ambiente de acolhimento, onde todos são bem-vindos, sem julgamentos, e podem se refugiar no amor e na misericórdia de Deus. A canção expressa a ideia de que, independentemente das dificuldades ou dos problemas da vida, Deus oferece um lar espiritual, um lugar de paz e consolo. A música transmite a sensação de estar no "colinho" de Deus, uma metáfora para o carinho, a proteção e o abraço divino.
+                
+                Além disso, a canção tem um tom de convite, chamando as pessoas a se aproximarem dessa "Casa" espiritual, um espaço seguro onde é possível renovar a fé, receber cura e encontrar acolhimento. Isso ressoa muito com a missão da Comunidade Colo de Deus, que visa ser um lugar onde as pessoas possam experimentar a presença de Deus de maneira transformadora.
+                
+                Com uma melodia suave e envolvente, "Casa" transmite uma mensagem de esperança e restauração, lembrando aos ouvintes que, em Deus, todos têm um lugar onde podem se sentir amados e pertencentes, independentemente das circunstâncias da vida. É uma música que inspira confiança e entrega, mostrando que a verdadeira "casa" está na presença do Senhor.</p>
+        </div>
+    </div>
+    <div class="section2">
+        <h2>Alguns membros da comunidade: </h2>
+        <div class="card">
+           <img src="img/seta-esquerda.svg" alt="" class="arrow" id="seta-esquerda" onclick="imagemAnterior()">
+           <img src="img/Pri.jpeg" alt="" class="slider-image">
+           <img src="img/Max.jpeg" alt="" class="slider-image">
+           <img src="img/moco.jpeg" alt="" class="slider-image">
+           <img src="img/seta-direita.svg" alt="" class="arrow" id="seta-direita" onclick="proximaImagem()">
+        </div>
+    </div>
+
+    <script src="conheca.js"></script>
+</body>
+</html>
